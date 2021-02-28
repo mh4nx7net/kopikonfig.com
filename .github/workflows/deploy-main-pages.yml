@@ -1,9 +1,12 @@
-name: github pages
+name: deploy kopikonfig pages
 
 on:
+  pull:
+    branches:
+      - master
   push:
     branches:
-      - main  # Set a branch to deploy
+      - live  # Set a branch to deploy
 
 jobs:
   deploy:
