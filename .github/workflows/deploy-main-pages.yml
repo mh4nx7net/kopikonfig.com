@@ -1,9 +1,6 @@
 name: deploy kopikonfig pages
 
 on:
-  pull:
-    branches:
-      - master
   push:
     branches:
       - live  # Set a branch to deploy
