@@ -3,7 +3,7 @@ name: deploy kopikonfig pages
 on:
   push:
     branches:
-      - live  # Set a branch to deploy
+      - live
 
 jobs:
   deploy:
