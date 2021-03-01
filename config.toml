@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Geek kang kopas"
 pygmentsstyle= "monokai"
 
-#theme = "hugo-theme-novela"
+theme = "hugo-theme-novela"
 
 paginate = 6
 
