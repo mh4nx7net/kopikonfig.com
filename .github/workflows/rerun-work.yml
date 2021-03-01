@@ -1,0 +1,44 @@
+name: Re-run Workflow
+
+on:
+  # Check open pull requests for relevant labels and re-run the
+  # corresponding workflows if necessary.
+  # (Only recommended for testing.)
+  push:
+
+  # Check open pull requests for relevant labels and re-run the
+  # corresponding workflows if necessary.
+  schedule:
+    - cron: '*/30 * * * *'
+
+  # Remove relevant labels when a pull request is closed or trigger
+  # a re-run when a relevant labels ia added or removed.
+  pull_request_target:
+    types:
+      - closed
+      - labeled
+      - unlabeled
+
+  # Check open pull requests for relevant labels and re-run the
+  # corresponding workflows if necessary.
+  workflow_dispatch:
+
+  # Remove relevant labels when a workflow run finishes successfully.
+  workflow_run:
+    workflows:
+      - CI
+    types:
+      - completed
+
+jobs:
+  rerun-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-run pull request workflows
+        uses: reitermarkus/rerun-workflow@v1
+        with:
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
+          once-label: ci-requeue
+          continuous-label: ci-retry
+          trigger-labels: ci-trigger-1,ci-trigger-2
+          workflow: ci.yml
