@@ -1,7 +1,7 @@
 name: CI mainpage Deploy
 on:
   push:
-    branches: [ live ]
+    branches: [ gh-pages ]
   pull_request:
     branches: [ master ]
   workflow_dispatch:
@@ -24,8 +24,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-      - name: Run a multi-line script
-        run: |
-          echo build completed
-          echo deploy completed
-          echo alhamdulillah
