@@ -25,5 +25,5 @@ deploy:
   local-dir: public
   target_branch: master  # branch contains blog content
   on:
-    branch: gh-pages  # branch contains Hugo generator code
+    branch: lives  # branch contains Hugo generator code
 
