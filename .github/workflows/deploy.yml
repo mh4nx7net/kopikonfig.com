@@ -1,5 +1,5 @@
 name: CI mainpage Deploy
-on:
+on: [push]
   push:
     branches: [ gh-pages ]
   pull_request:
