@@ -4,7 +4,7 @@
 	"description": "kopikonfig wraper and automation",
 	"main": "index.js",
 	"scripts": {
-		"clean": "hugo mod clean",
+		"clean": "hugo mod clean --verbose",
 		"start": "hugo serve -D",
 		"deploy": "git add .; git commit -am 'update and deploy'; git push origin master --force",
 		"test": "echo \"Error: no test specified\" && exit 1"
