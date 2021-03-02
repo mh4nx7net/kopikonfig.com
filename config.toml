@@ -1,19 +1,19 @@
 baseURL = "https://kopikonfig.com/"
-languageCode = "en-us"
+languageCode = "en-US"
 title = "Geek kang kopas"
-pygmentsstyle= "monokai"
-
+pygmentsstyle = "monokai"
 theme = "hugo-theme-novela"
-
-paginate = 6
+paginate = 6.0
+googleAnalytics = "G-THHG6K9J97"
+disqusShortname = "kopikonfig-com"
+enableRobotsTXT = true
 
 [social]
-twitter= "https://twitter.com/sandiko_r"
-github= "https://github.com/mh4nx7net"
-linkedin= "https://www.linkedin.com/in/raqhni-sandiko-16b975175"
+twitter = "https://twitter.com/sandiko_r"
+github = "https://github.com/mh4nx7net"
+linkedin = "https://www.linkedin.com/in/raqhni-sandiko-16b975175"
 instagram = "https://instagram.com/rsandi18"
-dribbble = "#"
-youtube = "https://youtube.com"
+youtube = "https://www.youtube.com/channel/UC0dA659K6kuPK90k_yQ4W0g"
 
 [taxonomies]
 author = "authors"
