@@ -1,19 +1,20 @@
 {{ define "main" }}
-{{ template "_internal/disqus.html" . }}
 <section class="section narrow">
 
-    {{ partial "article/hero.html" . }}
+	{{ partial "article/hero.html" . }}
 
-    {{ partial "article/progress" . }}
+	{{ partial "article/progress" . }}
 
-    <article  id="articleContent" class="post-content" style="position:relative;">
-        {{ .Content }}
-    </article>
+	<article  id="articleContent" class="post-content" style="position:relative;">
+		{{ .Content }}
+	</article>
 
 
-    {{ partial "article/next.html" . }}
+	{{ partial "article/next.html" . }}
+
+	{{ template "_internal/disqus.html" . }}
 </section>
 
 {{ $script := resources.Get "js/progressBar.js" }}
- <script src="{{ $script.RelPermalink }}"></script>
+<script src="{{ $script.RelPermalink }}"></script>
 {{ end }}
