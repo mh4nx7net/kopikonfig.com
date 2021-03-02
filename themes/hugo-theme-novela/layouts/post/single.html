@@ -12,9 +12,10 @@
 
 	{{ partial "article/next.html" . }}
 
+	{{ partial "disqus.html" . }}
+
 </section>
 
-{{ template "_internal/disqus.html" . }}
 {{ $script := resources.Get "js/progressBar.js" }}
 <script src="{{ $script.RelPermalink }}"></script>
 {{ end }}
