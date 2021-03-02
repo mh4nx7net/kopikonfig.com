@@ -1,0 +1,22 @@
+{
+	"name": "kopikonfig.com",
+	"version": "1.0.0",
+	"description": "kopikonfig wraper and automation",
+	"main": "index.js",
+	"scripts": {
+		"clean": "hugo mod clean",
+		"start": "hugo serve -D",
+		"deploy": "git add .; git commit -am 'update and deploy'; git push origin master --force",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mh4nx7net/kopikonfig.com.git"
+	},
+	"author": "sandiko",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/mh4nx7net/kopikonfig.com/issues"
+	},
+	"homepage": "https://github.com/mh4nx7net/kopikonfig.com#readme"
+}
