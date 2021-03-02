@@ -18,5 +18,9 @@
 	"bugs": {
 		"url": "https://github.com/mh4nx7net/kopikonfig.com/issues"
 	},
-	"homepage": "https://github.com/mh4nx7net/kopikonfig.com#readme"
+	"homepage": "https://github.com/mh4nx7net/kopikonfig.com#readme",
+	"dependencies": {
+		"pandoc": "^0.2.0",
+		"yarn": "^1.22.10"
+	}
 }
